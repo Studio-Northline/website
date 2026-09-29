@@ -61,6 +61,7 @@ https://studio-northline.github.io/website/#app-codesnap-whats-new
 - Commit messages in history use a short lowercase scope prefix plus an imperative summary: `ui:`, `content:`, `style:`, `chore:`, `header:`.
 - Keep copy human and plain — earlier passes deliberately de-formalized the text.
 - Fixed contact/links: `northline.studio.developer@gmail.com`, Play Store id `com.hadiawali.codesnap`, GitHub `Northline Studio`.
+- **Always push when the work is done** — commit with the scoped prefix and `git push origin main` without asking. Don't leave changes sitting in the working tree.
 
 ## Verifying changes
 
