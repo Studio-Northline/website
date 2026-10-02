@@ -2,7 +2,7 @@
 
 ## What this project is
 
-A static, single-page marketing/legal site for **Northline Studio** (Northline Studio's solo Android app brand). It holds:
+A static, single-page marketing/legal site for **Northline Studio** (a solo Android app brand). It holds:
 
 - the studio home / About / Contact sections,
 - a Play-Store-style listing for the **CodeSnap** app (screenshots, What's new, About this app),
