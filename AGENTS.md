@@ -9,7 +9,7 @@ A static, single-page marketing/legal site for **Northline Studio** (an independ
 - the app's **hosted Privacy Policy and Terms of Service**, which the Android app opens in a browser tab.
 
 Live at <https://studio-northline.github.io/website/> (GitHub Pages, deployed from `main`).
-Repo: <https://github.com/Northline Studio/website> — local clone: `C:\Users\<you>\AndroidStudioProjects\website`.
+Repo: <https://github.com/Studio-Northline/website> — local clone: `C:\Users\<you>\AndroidStudioProjects\website`.
 
 Related project (do not confuse): `C:\Users\<you>\AndroidStudioProjects\CodeSnap` is the Android app itself. It used to contain a `/website` folder; that copy was removed — the site lives only here, and the app just links to it.
 
@@ -46,6 +46,8 @@ https://studio-northline.github.io/website/#privacy
 https://studio-northline.github.io/website/#app-codesnap-terms
 https://studio-northline.github.io/website/#app-codesnap-whats-new
 ```
+
+The repo moved from `Northline Studio` to the `Studio-Northline` org, so `studio-northline.github.io/website/*` now 404s. **`AboutHelper.kt` in the CodeSnap repo still points at the old URLs and must be updated**, or the in-app Privacy Policy / Terms / What's new links stay broken.
 
 ## Header / responsive nav
 
