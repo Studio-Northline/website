@@ -66,7 +66,7 @@ The repo moved to the `Studio-Northline` org, so the original personal-account P
 - Commit messages in history use a short lowercase scope prefix plus an imperative summary: `ui:`, `content:`, `style:`, `chore:`, `header:`.
 - Keep copy human and plain — earlier passes deliberately de-formalized the text.
 - The site speaks in the first-person plural: **we / us / our**. Never `I`, `me`, `my`, `myself`, and never describe the studio as one person, solo, or "just me".
-- Fixed contact/links: `northline.studio.developer@gmail.com`, GitHub `Studio-Northline`. The Play Store package id is owned by the Play Console and referenced in `index.html`'s Install button — keep the two in sync.
+- Fixed contact/links: `northline.studio.developer@gmail.com`, Play Store id `com.northlinestudio.codesnap`, GitHub `Studio-Northline`.
 - **No open-source licence.** `LICENSE` reserves everything to Northline Studio — public repo ≠ free to use. Never add, swap in, or suggest an OSS licence (MIT, Apache, GPL…).
 - **Always push when the work is done** — commit with the scoped prefix and `git push origin main` without asking. Don't leave changes sitting in the working tree.
 
