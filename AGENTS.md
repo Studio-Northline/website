@@ -78,3 +78,9 @@ No test suite. Before pushing:
 2. Check both a 390px and a 1280px viewport: hamburger open/close on narrow, inline links on wide.
 3. Confirm `#privacy`, `#app-codesnap-terms`, and `#app-codesnap-whats-new` still land on the right section.
 4. After pushing, Pages deploys in about a minute: <https://studio-northline.github.io/website/>
+
+## Repository history
+
+`main` was force-pushed (history rewritten) on 2026-10-03, so **every commit SHA changed** and any old SHA reference is dead. The current chain is the only one — nothing is archived in this repo.
+
+Force-pushes do **not** trigger a GitHub Pages build, because the push event's `before` SHA no longer resolves (the `POST …/pages/builds` endpoint reports "queued" but produces nothing). After a rewrite, get a deploy by pushing a normal commit — that is the only reliable trigger.
