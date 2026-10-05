@@ -101,12 +101,15 @@ button.submit{padding:11px 22px; background:var(--accent); color:#121212; border
 .stat-value{font-size:1.15rem; font-weight:700; color:var(--text); line-height:1.3;}
 .stat-label{font-size:.81rem; color:var(--text-dim);}
 .banner-actions{display:flex; align-items:center; flex-wrap:wrap; gap:16px;}
-.install-btn{display:inline-flex; align-items:center; gap:9px; padding:11px 22px; background:var(--accent); color:#121212; border-radius:10px; font-family:Helvetica, Arial, sans-serif; font-size:.95rem; font-weight:600; text-decoration:none; transition:filter .15s, transform .15s;}
+.install-btn{display:inline-flex; align-items:center; gap:9px; padding:11px 22px; background:var(--accent); color:#121212; border-radius:10px; font-family:Helvetica, Arial, sans-serif; font-size:.95rem; font-weight:600; line-height:1.55; text-decoration:none; transition:filter .15s, transform .15s;}
 .install-btn:hover{filter:brightness(1.1); transform:translateY(-1px);}
 .install-btn svg{width:15px; height:15px; flex-shrink:0;}
-.share-btn{display:inline-flex; align-items:center; gap:7px; padding:8px 2px; background:none; border:none; color:var(--accent); font-size:.95rem; font-weight:600; cursor:pointer;}
-.share-btn:hover{text-decoration:underline;}
-.share-btn svg{width:20px; height:20px; stroke:currentColor; flex-shrink:0;}
+/* Same geometry as .install-btn: padding is 1px tighter so the 1px border
+   lands on the exact same box height. */
+.share-btn{display:inline-flex; align-items:center; gap:9px; padding:10px 21px; background:var(--accent-soft); border:1px solid var(--accent); border-radius:10px; color:var(--accent); font-family:Helvetica, Arial, sans-serif; font-size:.95rem; font-weight:600; line-height:1.55; cursor:pointer; transition:background .15s, color .15s, transform .15s;}
+.share-btn:hover{background:var(--accent); color:#121212; transform:translateY(-1px);}
+.share-btn:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+.share-btn svg{width:18px; height:18px; stroke:currentColor; flex-shrink:0;}
 .banner-icon{flex:0 0 auto; width:150px; height:150px; border-radius:22%; background:transparent; box-shadow:0 18px 40px -12px #000;}
 .banner-icon svg{display:block; width:100%; height:100%;}
 .badge{font-size:.72rem; padding:3px 10px; border-radius:20px; background:var(--surface-2); color:var(--text-dim); display:inline-block; margin-bottom:14px;}
@@ -119,6 +122,7 @@ button.submit{padding:11px 22px; background:var(--accent); color:#121212; border
     .stat{padding:0 16px;}
   .banner-actions{gap:12px;}
   .install-btn{padding:10px 18px; font-size:.9rem;}
+  .share-btn{padding:9px 17px; font-size:.9rem;}
 }
 
 .store-grid{display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:40px; align-items:start;}
