@@ -227,24 +227,26 @@
     });
   });
 
-  const aboutDesc = document.getElementById('aboutDesc');
-  const readMore = document.getElementById('readMore');
-  if(aboutDesc && readMore){
+  // "Read more" toggles — one pair per app section: an .about-desc and the
+  // .read-more button sitting next to it in the same .page-section
+  document.querySelectorAll('.about-desc').forEach(desc=>{
+    const btn = desc.parentElement.querySelector('.read-more');
+    if(!btn) return;
     const fit = ()=>{
-      if(!aboutDesc.offsetHeight) return;
-      if(aboutDesc.classList.contains('collapsed')){
-        readMore.hidden = aboutDesc.scrollHeight <= aboutDesc.clientHeight + 4;
+      if(!desc.offsetHeight) return;
+      if(desc.classList.contains('collapsed')){
+        btn.hidden = desc.scrollHeight <= desc.clientHeight + 4;
       }else{
-        readMore.hidden = false;
+        btn.hidden = false;
       }
     };
-    readMore.addEventListener('click', ()=>{
-      const collapsed = aboutDesc.classList.toggle('collapsed');
-      readMore.textContent = collapsed ? 'Read more' : 'Show less';
-      readMore.setAttribute('aria-expanded', String(!collapsed));
+    btn.addEventListener('click', ()=>{
+      const collapsed = desc.classList.toggle('collapsed');
+      btn.textContent = collapsed ? 'Read more' : 'Show less';
+      btn.setAttribute('aria-expanded', String(!collapsed));
       fit();
     });
     window.addEventListener('resize', fit, {passive:true});
     window.addEventListener('hashchange', ()=> setTimeout(fit, 0));
     fit();
-  }
+  });
