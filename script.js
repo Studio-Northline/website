@@ -1,4 +1,6 @@
-  const routes = ['home','about','contact','app-codesnap','app-codesnap-privacy','app-codesnap-terms','privacy','app-spotit','app-spotit-privacy','app-spotit-terms'];
+  // 'app-spotit' is intentionally absent: the game listing is hidden for now
+  // (commented out in index.html). Re-add it together with that section.
+  const routes = ['home','about','contact','app-codesnap','app-codesnap-privacy','app-codesnap-terms','privacy','app-spotit-privacy','app-spotit-terms'];
 
   function nav(id){ location.hash = '#' + id; }
 
